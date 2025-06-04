@@ -1,0 +1,6 @@
+{
+  "title": "Books",
+  "icon": "Book",
+  "root": true,
+  "pages": ["index", "log", "---Books---", "...(books)"]
+}
