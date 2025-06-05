@@ -1,5 +1,5 @@
 {
   "title": "OSTEP",
   "icon": "Cpu",
-  "pages": ["index", "---Introduction---", "...0-introduction"]
+  "pages": ["introduction", "---Introduction---", "...0-introduction"]
 }

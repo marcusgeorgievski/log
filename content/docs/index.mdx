@@ -1,20 +1,52 @@
 ---
 title: Notes
 icon: Library
-description: Your first document
+description: Personal collection of notes from various resources
 ---
+
+export function Book({ title, subtitle }) {
+  return (
+    <div className="flex flex-col lg:flex-row lg:items-center w-full lg:justify-between">
+      <p className="my-0! ">{title}</p>
+      <p className="my-0! font-light text-sm text-muted-foreground">
+        {subtitle}
+      </p>
+    </div>
+  );
+}
+
+## Categories
+
+1. Books
+2. Articles
+3. Topics
 
 ## Reading List
 
 ### Books
 
-- Operating Systems: Three Easy Pieces
-- TCP/IP Illustrated, Volume 1
-- Web Security for Developers
-- Designing Data-Intensive Applications
-- Software Engineering at Google
-- The Pragmatic Programmer
-- Building Secure and Reliable Systems
+- <Book
+    title="Operating Systems: Three Easy Pieces"
+    subtitle="Arpaci-Dusseau"
+  />
+- <Book title="TCP/IP Illustrated, Volume 1" subtitle="W. Richard Stevens" />
+- <Book title="Web Security for Developers" subtitle="Malcolm McDonald" />
+- <Book
+    title="Designing Data-Intensive Applications"
+    subtitle="Martin Kleppmann"
+  />
+- <Book
+    title="Software Engineering at Google"
+    subtitle="Titus Winters, Tom Manshreck, and Hyrum Wright"
+  />
+- <Book
+    title="The Pragmatic Programmer"
+    subtitle="Andrew Hunt and David Thomas"
+  />
+- <Book
+    title="Building Secure and Reliable Systems"
+    subtitle="Heather Adkins et al. (Google SRE)"
+  />
 
 ### Articles
 
