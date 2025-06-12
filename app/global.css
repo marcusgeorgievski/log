@@ -43,6 +43,16 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* Spacing between sidebar tabs */
+#nd-sidebar a[href] {
+  margin-bottom: 2px !important;
+}
+
+/* Add extra margin if there is a sidebar subheading */
+#nd-sidebar a[href] + div {
+  margin-top: 6px !important;
+}
+
 /* Blue */
 
 :root {

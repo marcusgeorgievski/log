@@ -3,7 +3,6 @@
   "icon": "Book",
   "root": true,
   "pages": [
-    "---Intro---",
     "index",
     "log",
     "emma",

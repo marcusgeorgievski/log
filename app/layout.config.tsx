@@ -1,5 +1,4 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
-import { BookIcon, ChartArea, Library } from "lucide-react";
 import Image from "next/image";
 
 /**

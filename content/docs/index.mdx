@@ -1,10 +1,10 @@
 ---
 title: Notes
 icon: Library
-description: Personal collection of notes from various resources
+description: Personal collection of notes and more from various resources
 ---
 
-export function Book({ title, subtitle }) {
+export function Resource({ title, subtitle }) {
   return (
     <div className="flex flex-col lg:flex-row lg:items-center w-full lg:justify-between">
       <p className="my-0! ">{title}</p>
@@ -19,35 +19,45 @@ export function Book({ title, subtitle }) {
 
 1. Books
 2. Articles
-3. Topics
+3. Topics -> Projects, personal reference, etc.
 
-## Reading List
+## Todo
 
 ### Books
 
-- <Book
+- <Resource
     title="Operating Systems: Three Easy Pieces"
     subtitle="Arpaci-Dusseau"
   />
-- <Book title="TCP/IP Illustrated, Volume 1" subtitle="W. Richard Stevens" />
-- <Book title="Web Security for Developers" subtitle="Malcolm McDonald" />
-- <Book
+- <Resource
+    title="TCP/IP Illustrated, Volume 1"
+    subtitle="W. Richard Stevens"
+  />
+- <Resource title="Web Security for Developers" subtitle="Malcolm McDonald" />
+- <Resource
     title="Designing Data-Intensive Applications"
     subtitle="Martin Kleppmann"
   />
-- <Book
+- <Resource
     title="Software Engineering at Google"
     subtitle="Titus Winters, Tom Manshreck, and Hyrum Wright"
   />
-- <Book
+- <Resource
     title="The Pragmatic Programmer"
     subtitle="Andrew Hunt and David Thomas"
   />
-- <Book
+- <Resource
     title="Building Secure and Reliable Systems"
     subtitle="Heather Adkins et al. (Google SRE)"
   />
 
 ### Articles
 
-- No content yet
+- ...
+
+### Topics
+
+- Build your own Redis
+- Build your own HTTP
+- Build your own SQLite
+- Docker Mastery: with Kubernetes + Swarm
