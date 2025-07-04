@@ -16,3 +16,4 @@ Personal collection of notes from various resources.
 
 - Create a CMS-type page to have markdown/preview viewer.
 - Create CMS service using _Fumadocs Core_ to allow others to have their own documentation site without having to code.
+  - Customization ideas: search, logo, theme, sidebar headings, home page, etc.

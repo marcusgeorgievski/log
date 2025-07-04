@@ -2,13 +2,5 @@
   "title": "Books",
   "icon": "Book",
   "root": true,
-  "pages": [
-    "index",
-    "log",
-    "emma",
-    "---Books---",
-    "...(books)",
-    "---Topics---",
-    "...(topics)"
-  ]
+  "pages": ["index", "log", "---Books---", "...(books)"]
 }

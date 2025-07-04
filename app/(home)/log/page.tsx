@@ -9,7 +9,7 @@ export default function LogPage() {
       style={{ height: "calc(100vh - 56px)" }}
     >
       <div className="w-md">
-        <h1 className="mb-6 font-bold text-2xl">New log.</h1>
+        <h1 className="mb-6 font-bold text-2xl">New log</h1>
 
         <LogForm />
       </div>

@@ -48,10 +48,17 @@ export default function LogForm() {
   function onSubmit(values: FormValues) {
     const log = {
       ...values,
-      date: format(values.date, "MMMM dd yyyy"),
+      date: values.date.toISOString(), // Store as ISO string to preserve timezone info. TIMESTAMPTZ in pg
     };
     console.log(log);
   }
+
+  /**
+   * Ideally, we have a combobox or something for when the users starts typing the resource.
+   * On page load, we fetch all pre-existing resources from the database, this should be super quick.
+   * When the user selects the Resource input and/or starts typing, we will show + filter the
+   * appropriate resource.
+   * */
 
   return (
     <Form {...form}>
@@ -137,7 +144,7 @@ export default function LogForm() {
           />
         </div>
 
-        <Button type="submit" className="w-full text-white mt-4">
+        <Button type="submit" className="w-full text-white  mt-4">
           Submit
         </Button>
       </form>
