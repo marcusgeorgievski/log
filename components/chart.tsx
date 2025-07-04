@@ -14,37 +14,8 @@ import { Card, CardTitle } from "./ui/card";
 import { useState } from "react";
 
 let chartData = [
-  // April 2025
-  { date: "April 4 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 5 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 6 2025", DDIA: 10, OSTEP: 10, s: 40 },
-  { date: "April 7 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 8 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 9 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 10 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 11 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 15 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 18 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 22 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 25 2025", DDIA: 10, OSTEP: 10 },
-  { date: "April 29 2025", DDIA: 10, OSTEP: 10 },
-
-  // May 2025
-  { date: "May 2 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 6 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 9 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 13 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 14 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 15 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 16 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 20 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 23 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 27 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 28 2025", DDIA: 10, OSTEP: 10 },
-  { date: "May 30 2025", DDIA: 10, OSTEP: 10 },
-
-  // June 2025
-  { date: "June 3 2025", DDIA: 10, OSTEP: 10 },
+  // July 2025
+  { date: "July 4 2025", UDS: 10 },
 ];
 
 const chartConfig = {
@@ -55,6 +26,10 @@ const chartConfig = {
   OSTEP: {
     label: "OSTEP",
     color: "#60a5fa",
+  },
+  UDS: {
+    label: "UDS",
+    color: "#30a5fa",
   },
 } satisfies ChartConfig;
 
@@ -164,6 +139,7 @@ export default function Chart() {
             radius={0}
             stackId="a"
           />
+          <Bar dataKey="UDS" fill="var(--color-UDS)" radius={0} stackId="a" />
         </BarChart>
       </ChartContainer>
     </div>
